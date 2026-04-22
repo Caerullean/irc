@@ -14,12 +14,12 @@
         <dependency>
             <groupId>org.choral-lang</groupId>
             <artifactId>choral</artifactId>
-            <version>0.1.1</version>
+            <version>0.1.13</version>
         </dependency>
         <dependency>
             <groupId>org.choral-lang</groupId>
             <artifactId>runtime</artifactId>
-            <version>0.1.1</version>
+            <version>0.1.13</version>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -63,6 +63,7 @@
                                 <argument>--sources=${project.basedir}/src/main/choral</argument>
                                 <argument>--headers=${project.basedir}/src/main/choral</argument>
                                 <argument>--target=${project.build.directory}/generated-sources/choral</argument>
+                                <argument>--suppress-lifter-warnings</argument>
                                 <argument>Irc</argument>
                             </arguments>
                         </configuration>
