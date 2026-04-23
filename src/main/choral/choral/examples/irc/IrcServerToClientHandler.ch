@@ -76,9 +76,9 @@ public class IrcServerToClientHandler@(Client, Server)
                             clientState.renameMember(from, to);
                         }
                     }
-                    else {{}}
+                    else {}
                 }
-                else {{{}}}
+                else {}
             }
 
             case JOIN -> {
@@ -106,7 +106,7 @@ public class IrcServerToClientHandler@(Client, Server)
                         }
                     }
                 }
-                else {{{}}}
+                else {}
             }
 
             case PART -> {
@@ -134,7 +134,7 @@ public class IrcServerToClientHandler@(Client, Server)
                         }
                     }
                 }
-                else {{{}}}
+                else {}
             }
 
             case PRIVMSG -> {
@@ -190,9 +190,9 @@ public class IrcServerToClientHandler@(Client, Server)
                         clientState.getOut().println(info);
                         clientState.removeMember(nickname);
                     }
-                    else {{}}
+                    else {}
                 }
-                else {{{}}}
+                else {}
             }
 
             case ERROR -> {

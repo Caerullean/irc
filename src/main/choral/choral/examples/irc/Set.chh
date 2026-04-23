@@ -1,5 +1,0 @@
-package java.util;
-
-public class Set@R<T@R> {
-    public boolean@R contains(Object@R o) {}
-}
