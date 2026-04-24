@@ -1,6 +1,14 @@
-package choral.examples.irc;
+package choral.examples.applicationJava;
 
 import com.google.gson.Gson;
+
+import choral.examples.irc.ErrorMessage;
+import choral.examples.irc.IrcChannel_B;
+import choral.examples.irc.Irc_Server;
+import choral.examples.irc.ServerState;
+import choral.examples.irc.ServerUtil;
+import choral.examples.irc.Source;
+
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.channels.ServerSocketChannel;

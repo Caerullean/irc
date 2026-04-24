@@ -1,5 +1,8 @@
 package choral.examples.irc;
 
+import choral.examples.irc.*;
+
+
 public class IrcClientLocalHandler@R implements LocalHandler@R {
     private EventQueue@R<Message> clientQueue;
     private ClientState@R state;

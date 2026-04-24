@@ -3,6 +3,8 @@ package choral.examples.irc;
 import java.util.Optional;
 import java.util.concurrent.LinkedBlockingQueue;
 
+import choral.examples.irc.Util;
+
 public class EventQueue@R<T@R> {
     private LinkedBlockingQueue@R<Optional<T>> queue;
 

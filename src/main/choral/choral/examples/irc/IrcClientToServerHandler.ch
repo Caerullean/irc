@@ -2,6 +2,8 @@ package choral.examples.irc;
 
 import java.util.List;
 
+import choral.examples.irc.*;
+
 public class IrcClientToServerHandler@(Client, Server)
         implements EventHandler@(Client, Server)<Message> {
     private EventQueue@Server<Message> serverQueue;
