@@ -91,7 +91,6 @@
                                 <argument>--sources=${project.basedir}/src/main/choral</argument>
                                 <argument>--headers=${project.basedir}/src/main/choral</argument>
                                 <argument>--target=${project.build.directory}/generated-sources/choral</argument>
-                                <argument>--suppress-lifter-warnings</argument>
                                 <argument>Irc</argument>
                             </arguments>
                         </configuration>
