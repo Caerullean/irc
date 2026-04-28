@@ -1,0 +1,58 @@
+package choral.irc;
+
+import java.io.PrintStream;
+import java.util.Set;
+
+public class ServerState@R {
+    public ServerState() {}
+
+    public boolean@R isDebug() {}
+
+    public String@R getHostname() {}
+
+    public void enqueue(long@R clientId, Message@R message) {}
+
+    public String@R getUsername(long@R clientId) {}
+
+    public void setUsername(long@R clientId, String@R username) {}
+
+    public String@R getRealname(long@R clientId) {}
+
+    public void setRealname(long@R clientId, String@R realname) {}
+
+    public String@R getNickname(long@R clientId) {}
+
+    public boolean@R setNickname(long@R clientId, String@R nickname) {}
+
+    public boolean@R canRegister(long@R clientId) {}
+
+    public boolean@R isRegistered(long@R clientId) {}
+
+    public void setRegistered(long@R clientId) {}
+
+    public boolean@R nicknameExists(String@R nickname) {}
+
+    public Set@R<String> getChannels(long@R clientId) {}
+
+    public boolean@R channelExists(String@R channel) {}
+
+    public Set@R<Long> getMembers(String@R channel) {}
+
+    public boolean@R inChannel(long@R clientId, String@R channel) {}
+
+    public void joinChannel(long@R clientId, String@R channel) {}
+
+    public void partChannel(long@R clientId, String@R channel) {}
+
+    public void quit(long@R clientId) {}
+
+    public void remove(long@R clientId) {}
+
+    public void setQuitRequested(long@R clientId) {}
+
+    public boolean@R isQuitRequested(long@R clientId) {}
+
+    public void close(long@R clientId) {}
+
+    public PrintStream@R getOut() {}
+}

@@ -1,0 +1,34 @@
+package choral.irc;
+
+import java.util.List;
+import java.util.Set;
+
+import choral.irc.*;
+
+public class ServerUtil@R {
+    public static void printRecv(ServerState@R state, long@R clientId, Message@R message) {}
+
+    public static void printSend(ServerState@R state, long@R clientId, Message@R message) {}
+
+    public static void processWelcome(ServerState@R state, long@R clientId) {}
+
+    public static void processNick(ServerState@R state, long@R clientId, NickMessage@R message) {}
+
+    public static void processJoin(ServerState@R state, long@R clientId, JoinMessage@R message) {}
+
+    public static void processPart(ServerState@R state, long@R clientId, PartMessage@R message) {}
+
+    public static void processPrivmsg(ServerState@R state, long@R clientId, PrivmsgMessage@R message) {}
+
+    public static void sendQuits(ServerState@R state, long@R clientId, QuitMessage@R message) {}
+
+    public static void processQuit(ServerState@R state, long@R clientId, QuitMessage@R message) {}
+
+    public static <T@R extends Message@R> T@R withSource(T@R message, Source@R source) {}
+
+    public static ForwardMessage@R forwardNumeric(ServerState@R state, Command@R command, String@R nickname, String@R param1) {}
+
+    public static ForwardMessage@R forwardNumeric(ServerState@R state, Command@R command, String@R nickname, String@R param1, String@R param2) {}
+
+    public static ForwardMessage@R forwardNumeric(ServerState@R state, Command@R command, String@R nickname, String@R param1, String@R param2, String@R param3) {}
+}
