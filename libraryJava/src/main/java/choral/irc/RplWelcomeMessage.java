@@ -25,4 +25,9 @@ public class RplWelcomeMessage extends Message {
         assert params.size() >= 2;
         return params.get(1);
     }
+
+    @Override
+    public String toString(){
+        return super.toString();
+    }
 }

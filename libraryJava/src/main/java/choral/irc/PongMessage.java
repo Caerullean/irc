@@ -24,4 +24,9 @@ public class PongMessage extends Message {
         assert params.size() >= 1;
         return getParam(params.size() == 1 ? 0 : 1);
     }
+
+    @Override
+    public String toString(){
+        return super.toString();
+    }
 }

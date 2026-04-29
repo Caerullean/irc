@@ -38,4 +38,9 @@ public class RplNamReplyMessage extends Message {
         assert params.size() >= 4;
         return Arrays.asList(params.get(3).split(" "));
     }
+
+    @Override
+    public String toString(){
+        return super.toString();
+    }
 }

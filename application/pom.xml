@@ -25,6 +25,12 @@
             <groupId>org.choral-lang</groupId>
             <artifactId>library-choral</artifactId>
             <version>${revision}</version>
+            <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>org.choral-lang</groupId>
+            <artifactId>library-java</artifactId>
+            <version>${revision}</version>
         </dependency>
         <dependency>
             <groupId>com.google.code.gson</groupId>
@@ -39,6 +45,24 @@
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>3.0.0</version>
+                <executions>
+                    <execution>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>add-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>${project.basedir}/../libraryChoral/target/generated-sources/choral</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>

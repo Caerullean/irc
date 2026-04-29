@@ -1,7 +1,6 @@
 package choral.irc;
 
 import java.util.concurrent.ExecutorService;
-import choral.examples.irc.*;
 
 public class Irc@(Client, Server) {
     private Events@(Client, Server)<Message> events;

@@ -11,8 +11,6 @@ import java.util.concurrent.TimeUnit;
 
 import com.google.gson.Gson;
 
-import choral.irc.Irc_Server;
-
 public class Server {
     private static final String HOSTNAME = "irc.choral.net";
     private static final String HOST = "localhost";

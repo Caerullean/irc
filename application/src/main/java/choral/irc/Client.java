@@ -13,8 +13,6 @@ import java.util.concurrent.TimeUnit;
 
 import com.google.gson.Gson;
 
-import choral.irc.Irc_Client;
-
 public class Client {
     private Gson gson;
     private ExecutorService executor;
