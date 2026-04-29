@@ -1,3 +1,4 @@
 #!/bin/bash
 
-mvn exec:java -pl application -am -Dexec.mainClass="choral.irc.Client" -Dexec.args="'$*'"
+mvn install -pl application -am -DskipTests -q && \
+mvn exec:java -pl application -Dexec.mainClass="choral.irc.Client" -Dexec.args="'$*'"

@@ -23,14 +23,16 @@
     <dependencies>
         <dependency>
             <groupId>org.choral-lang</groupId>
-            <artifactId>library-choral</artifactId>
+            <artifactId>library-java</artifactId>
             <version>${revision}</version>
-            <type>pom</type>
         </dependency>
         <dependency>
             <groupId>org.choral-lang</groupId>
-            <artifactId>library-java</artifactId>
-            <version>${revision}</version>
+            <artifactId>choral</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.choral-lang</groupId>
+            <artifactId>runtime</artifactId>
         </dependency>
         <dependency>
             <groupId>com.google.code.gson</groupId>
