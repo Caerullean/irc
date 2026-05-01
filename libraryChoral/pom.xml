@@ -53,12 +53,11 @@
                             <goal>exec</goal>
                         </goals>
                         <configuration>
-                            <executable>java</executable>
+                            <executable>choral</executable>
                             <arguments>
-                                <argument>-cp</argument>
-                                <argument>${env.CHORAL_HOME}/choral-standalone.jar:${project.build.outputDirectory}:${project.basedir}/../libraryJava/target/classes</argument>
-                                <argument>choral.Choral</argument>
                                 <argument>epp</argument>
+                                <argument>-cp</argument>
+                                <argument>${project.basedir}/../libraryJava/target/classes</argument>
                                 <argument>--sources=${project.basedir}/src/main/choral</argument>
                                 <argument>--headers=${project.basedir}/src/main/choral</argument>
                                 <argument>--target=${project.build.directory}/generated-sources/choral</argument>

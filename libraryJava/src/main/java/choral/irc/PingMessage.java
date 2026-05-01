@@ -20,9 +20,4 @@ public class PingMessage extends Message {
         assert params.size() >= 1;
         return getParam(0);
     }
-
-    @Override
-    public String toString(){
-        return super.toString();
-    }
 }
